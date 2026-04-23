@@ -34,7 +34,6 @@ function getNeighbors(board) {
       const newBoard = [...board];
       const newIndex = newRow * SIZE + newCol;
 
-      // swap
       const temp = newBoard[zeroIndex];
       newBoard[zeroIndex] = newBoard[newIndex];
       newBoard[newIndex] = temp;
